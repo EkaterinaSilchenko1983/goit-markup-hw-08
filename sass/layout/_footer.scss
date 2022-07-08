@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer__container {
@@ -26,10 +27,13 @@
   margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  // font-size: 26px;
+  // line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  font-size: 24px;
+  line-height: 1.16;
 }
 
 .footer__logo {
@@ -41,7 +45,7 @@
   // margin-bottom: 9px;
 
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   text-align: center;
 
   color: rgba(255, 255, 255, 0.6);
@@ -67,6 +71,10 @@
 
 .no-margin {
   margin-bottom: 0;
+}
+
+.footer-box-soc {
+  margin-bottom: 60px;
 }
 
 .footer-soc-list {
@@ -108,12 +116,17 @@
   fill: currentColor;
 }
 
+.footer-form {
+  width: 100%;
+}
+
 .footer-form__field {
   // display: flex;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .footer-title {
@@ -131,6 +144,9 @@
 
 .footer-form__wrap {
   position: relative;
+
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .footer-form__lable {
@@ -158,7 +174,10 @@
 }
 
 .footer-form__input {
-  width: 358px;
+  // width: 358px;
+  max-width: 450px;
+  width: 100%;
+
   height: 50px;
   color: var(--main-text-color);
   font: inherit;
