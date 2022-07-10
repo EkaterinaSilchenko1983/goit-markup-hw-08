@@ -195,29 +195,49 @@
           <ul class="about list">
             <li class="about__item">
               <div class="thumb">
-                <img src="./images/box1.jpg" alt="разработка сайта" width="370" height="294" />
+                <picture>
+                  <source
+                    srcset="./images/box1.jpg 1x, ./images/box-1-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/box1.jpg" alt="разработка сайта" width="370" height="294" />
+                </picture>
                 <p class="thumb__label">Десктопные приложения</p>
               </div>
             </li>
             <li class="about__item">
               <div class="thumb">
-                <img
-                  src="./images/box2.jpg"
-                  alt="разработка мобильного приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box2.jpg 1x, ./images/box-2-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box2.jpg"
+                    alt="разработка мобильного приложения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="thumb__label">Мобильные приложения</p>
               </div>
             </li>
             <li class="about__item">
               <div class="thumb">
-                <img
-                  src="./images/box3.jpg"
-                  alt="цветовая палитра на планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box2.jpg 1x, ./images/box-2-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box3.jpg"
+                    alt="цветовая палитра на планшете"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="thumb__label">Дизайнерские решения</p>
               </div>
             </li>
@@ -231,7 +251,27 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/card-1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/card-1.jpg 1x, ./images/card-1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/card-1-tab.jpg 1x, ./images/card-1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/card-1-mob.jpg 1x, ./images/card-1-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/card-1-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="622"
+                />
+              </picture>
 
               <div class="team-card">
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
@@ -271,7 +311,21 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/card-2.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/card-2.jpg 1x, ./images/card-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/card-2-tab.jpg 1x, ./images/card-2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/card-2-mob.jpg 1x, ./images/card-2-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/card-2-mob.jpg" alt="Ольга Репина" width="450" height="622" />
+              </picture>
 
               <div class="team-card">
                 <h3 class="team-card__name">Ольга Репина</h3>
@@ -311,7 +365,21 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/card-3.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/card-3.jpg 1x, ./images/card-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/card-3-tab.jpg 1x, ./images/card-3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/card-3-mob.jpg 1x, ./images/card-3-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/card-3-mob.jpg" alt="Николай Тарасов" width="450" height="622" />
+              </picture>
 
               <div class="team-card">
                 <h3 class="team-card__name">Николай Тарасов</h3>
@@ -351,7 +419,21 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/card-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/card-4.jpg 1x, ./images/card-4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/card-4-tab.jpg 1x, ./images/card-4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/card-4-mob.jpg 1x, ./images/card-4-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/card-4-mob.jpg" alt="Михаил Ермаков" width="450" height="622" />
+              </picture>
 
               <div class="team-card">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
