@@ -11,10 +11,6 @@
   padding: 93px 15px 94px 15px;
   overflow-y: scroll;
 
-  // @media screen and (min-width: 768px) {
-  //   padding: 208px 159px 207px 159px;
-  // }
-
   @media screen and (min-width: 1200px) {
     padding: 0;
   }
@@ -102,7 +98,7 @@
 }
 
 .modal-title {
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
@@ -228,12 +224,13 @@
 }
 
 .check-text {
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     display: flex;
     flex-wrap: wrap;
     font-size: 10px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+    justify-content: center;
   }
 
   font-weight: 400;

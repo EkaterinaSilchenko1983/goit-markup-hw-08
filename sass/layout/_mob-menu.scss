@@ -130,7 +130,7 @@
   position: relative;
 }
 
-.mob-menu-soc__item::after {
+.mob-menu-soc__item:not(:last-child):after {
   content: '';
   position: absolute;
   width: 22px;
