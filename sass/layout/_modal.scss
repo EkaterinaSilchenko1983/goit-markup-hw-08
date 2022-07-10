@@ -7,17 +7,21 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 300ms var(--timing-animation-function),
     visibility 300ms var(--timing-animation-function);
+
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
+
+  // @media screen and (min-width: 768px) {
+  //   // padding: 208px 159px 207px 159px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .modal {
-  position: absolute;
-  width: 528px;
-  height: 581px;
   padding: 40px;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
 
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -28,12 +32,32 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0) rotate(-90deg);
   }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
 }
 
 .modale-close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 101px;
+  right: 23px;
   width: 30px;
   height: 30px;
 
@@ -53,6 +77,22 @@
   &:focus {
     fill: var(--accent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .is-hidden {
@@ -64,11 +104,17 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-field {
@@ -171,8 +217,8 @@
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   display: flex;
@@ -180,6 +226,11 @@
 
   a {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 2;
   }
 }
 

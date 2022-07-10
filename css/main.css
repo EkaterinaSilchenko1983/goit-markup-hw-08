@@ -102,6 +102,12 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: auto;
+  }
 }
 
 .nav {
@@ -376,6 +382,22 @@ body {
   color: #188ce8;
 }
 
+.mob-menu-soc__item {
+  position: relative;
+}
+
+.mob-menu-soc__item::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  left: 100%;
+  top: 50%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
 .hero {
   max-width: 100%;
   height: 400px;
@@ -500,6 +522,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.section--hidden {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--hidden {
+    display: block;
+  }
 }
 
 .no-padding {
@@ -932,16 +963,17 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 300ms var(--timing-animation-function), visibility 300ms var(--timing-animation-function);
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
+}
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding: 0;
+  }
 }
 
 .modal {
-  position: absolute;
-  width: 528px;
-  height: 581px;
   padding: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -950,11 +982,33 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-90deg);
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+}
 
 .modale-close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 101px;
+  right: 23px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -970,6 +1024,24 @@ body {
 .modale-close-btn:hover, .modale-close-btn:focus {
   fill: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .modale-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modale-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .is-hidden {
   opacity: 0;
@@ -980,11 +1052,18 @@ body {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-field {
@@ -1073,8 +1152,8 @@ body {
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   display: flex;
@@ -1082,6 +1161,12 @@ body {
 }
 .check-text a {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 2;
+  }
 }
 
 .check-text span {
