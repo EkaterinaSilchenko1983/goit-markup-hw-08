@@ -1058,16 +1058,30 @@ body {
   color: var(--title-text-color);
   margin-bottom: 12px;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .modal-title {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-title {
-    font-weight: 700;
-    font-size: 20px;
     line-height: 1.15;
   }
 }
 
 .modal-field {
   margin-bottom: 10px;
+}
+
+.modal-field--no-padding {
+  margin-bottom: 0;
+}
+
+.modal-field--padding {
+  margin-bottom: 20px;
 }
 
 .input-wrap {
@@ -1154,10 +1168,19 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--main-text-color);
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .check-text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
 }
 .check-text a {
   color: var(--accent-color);
@@ -1166,6 +1189,7 @@ body {
   .check-text {
     font-size: 14px;
     line-height: 2;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1178,6 +1202,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 320px) {
+  .check-text span {
+    width: 13px;
+    height: 12px;
+    margin-right: 5px;
+  }
 }
 .check-input:checked + .check-text span {
   background-color: var(--accent-color);
