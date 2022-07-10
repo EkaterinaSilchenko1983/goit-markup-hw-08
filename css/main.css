@@ -982,7 +982,7 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-90deg);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     width: 450px;
@@ -1024,7 +1024,7 @@ body {
 .modale-close-btn:hover, .modale-close-btn:focus {
   fill: var(--accent-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modale-close-btn {
     position: absolute;
     top: 8px;

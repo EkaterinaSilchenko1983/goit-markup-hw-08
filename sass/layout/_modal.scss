@@ -33,7 +33,7 @@
     transform: translate(-50%, -50%) scale(0) rotate(-90deg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     position: absolute;
     width: 450px;
     height: 609px;
@@ -78,7 +78,7 @@
     fill: var(--accent-color);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     position: absolute;
     top: 8px;
     right: 8px;
