@@ -950,7 +950,6 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
   border: none;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -964,6 +963,11 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   transition: background-color 250ms var(--timing-animation-function);
+}
+@media screen and (min-width: 1200px) {
+  .form-btn {
+    margin-left: 12px;
+  }
 }
 .form-btn:hover, .form-btn:focus {
   background-color: #188ce8;
